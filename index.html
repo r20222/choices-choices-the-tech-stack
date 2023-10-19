@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ocean Cleanup Dashboard</title>
+    <!-- Import Styles -->
+    <!-- <link rel="stylesheet" href="./assets/styles.css" /> -->
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <section id="app">
+      <!-- <h1>{{ product }}</h1> -->
+      <trash-graph 
+      :debris_extracted_total="responseData.totals.debris_extracted_total"
+      
+        ></trash-graph>
+      <!-- <p>{{ data.totals.debris_extracted_total }}</p> -->
+      <!-- <p>{{ responseData.totals.debris_extracted_last_30d }}</p> -->
+    </section>
+
+    <!-- Import Js -->
+    <script src="./main.js"></script>
+
+    
+
+     <!-- Import Components -->
+     <script src="./components/trashGraph.js"></script>
+
+
+     <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app');
+    </script>
+
+
+
+  </body>
+</html>
+
+<!-- :month="responseData.months[0].month"
+:year="responseData.months[0].year"
+:debris_extracted_month="responseData.months[0].debris_extracted" -->
+
+<!-- :debris_extracted_total="responseData.totals.debris_extracted_total" -->
