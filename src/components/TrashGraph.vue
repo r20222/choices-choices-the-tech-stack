@@ -2,6 +2,8 @@
 
 // Haal data op uit de totals API:
 import { ref, onMounted } from 'vue';
+import { Chart } from 'chart.js/auto';
+
 
 const totalData = ref(null); // Start met een null-waarde om aan te geven dat er nog geen data is.
 
@@ -26,7 +28,6 @@ async function getData() {
 
 // Chart JS
 
-import { Chart } from 'chart.js/auto';
 
 	// Functie om de kleurinstelling voor Chart.js te configureren op basis van dark mode
 	// function configureChartColor() {
@@ -42,52 +43,52 @@ import { Chart } from 'chart.js/auto';
 
 	// Ik heb de hele chart grafiek in de onmounted gezet omdat het dan bij de data kan als die goed is geladen. Anders krijg je error.
 	onMounted(async() => {
-		// configureChartColor();
-   
+	// configureChartColor();
 
 
 
-		// Door await getData() te gebruiken binnen de onMounted-hook, zorg je ervoor dat de API-aanroep wordt voltooid voordat je de gegevens probeert te benaderen
-		await getData();
-		console.log(totalData.value.totals.debris_extracted_last_30d);
+
+	// Door await getData() te gebruiken binnen de onMounted-hook, zorg je ervoor dat de API-aanroep wordt voltooid voordat je de gegevens probeert te benaderen
+	await getData();
+	// console.log(totalData.value.totals.debris_extracted_last_30d);
 
 
 
 	// de slice -4 pakt de laatste vier months
 	const laatsteVierMaanden = totalData.value.totals.months.slice(-4);
-	console.log(laatsteVierMaanden);
+	// console.log(laatsteVierMaanden);
 
-// Gegevens en configuratie
-const labels = [
-		laatsteVierMaanden[0].month,
-		laatsteVierMaanden[1].month,
-		laatsteVierMaanden[2].month,
-		laatsteVierMaanden[3].month
-	];
+	// Gegevens en configuratie
+	const labels = [
+			laatsteVierMaanden[0].month,
+			laatsteVierMaanden[1].month,
+			laatsteVierMaanden[2].month,
+			laatsteVierMaanden[3].month
+		];
 
-	let data = {
-		labels: labels,
-		datasets: [
-			{
-				label: 'Trash collected in kilogram',
-				data: [ laatsteVierMaanden[0].debris_extracted,
-					laatsteVierMaanden[1].debris_extracted,
-					laatsteVierMaanden[2].debris_extracted,
-					laatsteVierMaanden[3].debris_extracted
-				],
-				fill: true,
-				borderColor: 'rgb(75, 192, 192)',
-				tension: 0.1
-			}
-		]
-	};
+		let data = {
+			labels: labels,
+			datasets: [
+				{
+					label: 'Trash collected in kilogram',
+					data: [ laatsteVierMaanden[0].debris_extracted,
+						laatsteVierMaanden[1].debris_extracted,
+						laatsteVierMaanden[2].debris_extracted,
+						laatsteVierMaanden[3].debris_extracted
+					],
+					fill: true,
+					borderColor: 'rgb(75, 192, 192)',
+					tension: 0.1
+				}
+			]
+		};
 
-		const ctx = document.getElementById('line-chart').getContext('2d');
-		new Chart(ctx, {
-			type: 'line',
-			data: data
+			const ctx = document.getElementById('line-chart').getContext('2d');
+			new Chart(ctx, {
+				type: 'line',
+				data: data
+			});
 		});
-	});
 </script>
 
 <template>
