@@ -1,5 +1,4 @@
 <script>
-// import TheWelcome from '../components/TheWelcome.vue'
 import TrashGraph from '../components/TrashGraph.vue'
 import ChartContinents from '../components/ChartContinents.vue'
 import ChartRiverOcean from '../components/ChartRiverOcean.vue'
@@ -19,11 +18,11 @@ export default {
 
 <template>
   <main>
-    
+    <h3>Dashboard</h3>
     <TrashGraph/>
     <ChartContinents/>
     <ChartRiverOcean/>
 
-    <h3>Dashboard</h3>
+    
   </main>
 </template>
