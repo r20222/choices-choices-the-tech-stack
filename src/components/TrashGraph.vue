@@ -99,9 +99,9 @@ async function getData() {
     <canvas id="line-chart" width="400" height="200" />
 
     <!-- v-if gebruik ik zodat het alleen wordt weergegeven als de data binnen is, anders krijg je een error -->
-    <h3 v-if="totalData">{{ totalData.totals.debris_extracted_last_30d }}</h3>
+    <!-- <h3 v-if="totalData">{{ totalData.totals.debris_extracted_last_30d }}</h3>
     <h3 v-else>
       Error
-    </h3>
+    </h3> -->
   
 </template>

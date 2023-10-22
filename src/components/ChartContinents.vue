@@ -104,6 +104,7 @@ let data = {
 </script>
 
 <template>
+	<h2>Plastic removed per continent</h2>
 	<canvas id="polar-area-chart" width="400" height="200" />
 </template>
 

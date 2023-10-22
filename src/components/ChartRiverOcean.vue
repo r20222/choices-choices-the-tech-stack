@@ -78,5 +78,6 @@ onMounted(async() => {
 </script>
 
 <template>
+    <h2>Plastic removed from ocean and river systems</h2>
 	<canvas id="donut-chart" width="400" height="200" />
 </template>
