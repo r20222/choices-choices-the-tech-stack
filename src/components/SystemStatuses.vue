@@ -31,7 +31,6 @@
 
 				<tr>
 					<td class="gray">
-                        <!-- <div class="pulse-marker gray" /> -->
                         Planned
 					</td>
 					<td>
@@ -41,7 +40,6 @@
 
 				<tr>
 					<td class="gray">
-                        <!-- <div class="pulse-marker gray" /> -->
                         Contract signed
 					</td>
 					<td>
@@ -51,8 +49,6 @@
 			</table>
 		</section>
 </template>
-
-
 
 <style>
 
@@ -66,8 +62,8 @@
     /* Dots */
     tr > td.green:first-child::before{
         content:" ";
-        display: inline-block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-        width: 1rem; /* Pas de breedte en hoogte aan zoals nodig */
+        display: inline-block; 
+        width: 1rem; 
         height: 1rem;
         animation: pulse-green 2s infinite;
         background: rgb(132, 206, 95);
@@ -77,8 +73,8 @@
     }
     tr > td.blue:first-child::before{
         content:" ";
-        display: inline-block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-        width: 1rem; /* Pas de breedte en hoogte aan zoals nodig */
+        display: inline-block; 
+        width: 1rem; 
         height: 1rem;
         animation: pulse-blue 2s infinite;
         background: var(--lightBlue);
@@ -88,8 +84,8 @@
     }
     tr > td.gray:first-child::before{
         content:" ";
-        display: inline-block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-        width: 1rem; /* Pas de breedte en hoogte aan zoals nodig */
+        display: inline-block; 
+        width: 1rem; 
         height: 1rem;
         animation: pulse-gray 2s infinite;
         background: rgb(176, 176, 176);
