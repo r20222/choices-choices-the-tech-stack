@@ -5,6 +5,8 @@ import ChartRiverOcean from '../components/ChartRiverOcean.vue'
 import HeaderDashboard from '../components/HeaderDashboard.vue'
 import TrashRemovedTotal from '../components/TrashRemovedTotal.vue'
 import TrashRemoved30Days from '../components/TrashRemoved30Days.vue'
+import InfoText from '../components//InfoText.vue'
+
 
 
 
@@ -18,23 +20,20 @@ export default {
     ChartRiverOcean,
     HeaderDashboard,
     TrashRemovedTotal,
-    TrashRemoved30Days
+    TrashRemoved30Days,
+    InfoText
   },
 }
 </script>
 
 <template>
   <main>
-    <!-- horizontal blue line -->
+
     <hr>
-
-    <!-- header dashboard with search form -->
-    <section class="header-dashboard">
-      <HeaderDashboard />
-    </section>
-
+    <HeaderDashboard class="header-dashboard" />
     <TrashRemovedTotal />
     <TrashRemoved30Days />
+    <InfoText />
 
     <section class="panel chart-river-ocean">
       <ChartRiverOcean/>
@@ -62,7 +61,7 @@ main{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		/* grid-template-rows: 0.01fr 0.1fr 1fr 1fr 0.5fr 0.8fr 0.5fr 0.5fr 1fr ; */
-		gap: 1.2rem;
+		gap: 1rem;
 		grid-template-areas:
 			'line line'
 			'header-dashboard header-dashboard'

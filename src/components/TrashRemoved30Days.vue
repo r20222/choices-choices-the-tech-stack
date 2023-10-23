@@ -22,7 +22,6 @@ async function getData() {
 }
 
 onMounted(async() => {
-	// configureChartColor();
 	// Door await getData() te gebruiken binnen de onMounted-hook, zorg je ervoor dat de API-aanroep wordt voltooid voordat je de gegevens probeert te benaderen
 	await getData();
 })
@@ -46,7 +45,6 @@ onMounted(async() => {
         background-color: var(--whiteColor);
         box-shadow: var(--boxShadow) 0px 0px 8px;
         transition: .2s;
-        /* border: 20px solid var(--lightBlue) */
     }
     .trash-removed-30-days{
         grid-area: trash-removed-30-days;
