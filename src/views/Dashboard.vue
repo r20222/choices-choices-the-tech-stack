@@ -5,10 +5,9 @@ import ChartRiverOcean from '../components/ChartRiverOcean.vue'
 import HeaderDashboard from '../components/HeaderDashboard.vue'
 import TrashRemovedTotal from '../components/TrashRemovedTotal.vue'
 import TrashRemoved30Days from '../components/TrashRemoved30Days.vue'
-import InfoText from '../components//InfoText.vue'
-
-
-
+import InfoText from '../components/InfoText.vue'
+// import MapWorld from '../components/MapWorld.vue'
+import SystemStatuses from '../components/SystemStatuses.vue'
 
 
 
@@ -21,7 +20,9 @@ export default {
     HeaderDashboard,
     TrashRemovedTotal,
     TrashRemoved30Days,
-    InfoText
+    InfoText,
+	// MapWorld,
+	SystemStatuses
   },
 }
 </script>
@@ -34,6 +35,8 @@ export default {
     <TrashRemovedTotal />
     <TrashRemoved30Days />
     <InfoText />
+	<!-- <MapWorld /> -->
+	<SystemStatuses />
 
     <section class="panel chart-river-ocean">
       <ChartRiverOcean/>
