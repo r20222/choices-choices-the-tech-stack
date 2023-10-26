@@ -132,4 +132,25 @@ hr{
 		font-family: 'Roboto Mono', monospace;
 	}
 
+
+	/* mediascreens */
+	@media screen and (min-width:992px) {
+		main{
+        margin: 5rem 2rem 2rem 15.3rem;
+		display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: 0.01fr 0.1fr 0.3fr 0.4fr 0.4fr 0.6fr; */
+        grid-template-areas:
+		'line line'
+			'header-dashboard header-dashboard'
+			'trash-removed-total trash-removed-30-days'
+			'dashboard-info dashboard-info'
+			'map map'
+			'share share'
+			'chart-river-ocean chart-continents'
+			'chart-river-ocean chart-continents'
+			'trash-graph trash-graph'
+			'more more';
+    }
+	}
 </style>
