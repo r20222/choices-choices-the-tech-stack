@@ -35,7 +35,10 @@ export default {
     <TrashRemovedTotal />
     <TrashRemoved30Days />
     <InfoText />
-	<MapWorld />
+	<section class="map-container">
+		<MapWorld class="map" />
+
+	</section>
 	<SystemStatuses />
 
     <section class="panel chart-river-ocean">
@@ -82,13 +85,14 @@ main{
 .header-dashboard{
 		grid-area: header-dashboard;
 	}
-	.map{
+	.map-container{
 		grid-area: map;
 		border-radius: 0.5rem;
 		padding: 0.5rem;
 		background-color: var(--whiteColor);
 		box-shadow: var(--boxShadow) 0px 0px 8px;
 		transition: 0.2s;
+		height:600px;
 	}
 	.chart-river-ocean{
 		grid-area: chart-river-ocean;

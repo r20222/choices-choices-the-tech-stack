@@ -123,7 +123,6 @@ console.log(oceanData.value)
 
 <template>
     <section id="map" />
-	<!-- <h1>yoo</h1> -->
 </template>
 
 
@@ -131,6 +130,16 @@ console.log(oceanData.value)
 	#map {
 		position: relative;
 		width: 100%;
-		height: 500px;
+		height: 100%;
+	}
+	#map:hover{
+		cursor: pointer;
+	}
+	#map:active{
+		cursor:grabbing
+	}
+	.mapboxgl-ctrl-attrib-inner{
+		margin-top:-5rem;
+		margin-left:1rem;	
 	}
 </style>
