@@ -6,7 +6,7 @@ import HeaderDashboard from '../components/HeaderDashboard.vue'
 import TrashRemovedTotal from '../components/TrashRemovedTotal.vue'
 import TrashRemoved30Days from '../components/TrashRemoved30Days.vue'
 import InfoText from '../components/InfoText.vue'
-// import MapWorld from '../components/MapWorld.vue'
+import MapWorld from '../components/MapWorld.vue'
 import SystemStatuses from '../components/SystemStatuses.vue'
 
 
@@ -21,7 +21,7 @@ export default {
     TrashRemovedTotal,
     TrashRemoved30Days,
     InfoText,
-	// MapWorld,
+	MapWorld,
 	SystemStatuses
   },
 }
@@ -35,7 +35,7 @@ export default {
     <TrashRemovedTotal />
     <TrashRemoved30Days />
     <InfoText />
-	<!-- <MapWorld /> -->
+	<MapWorld />
 	<SystemStatuses />
 
     <section class="panel chart-river-ocean">
