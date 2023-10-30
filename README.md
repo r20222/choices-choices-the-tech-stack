@@ -37,6 +37,9 @@ We werken niet met user-stories maar met doelen. Hieronder zijn de doelen te lez
 
 ## Installatie
 
+* npm install mapbox-gl
+* npm install vue-router
+
 ## Gebruik
 
 ## Bronnen
