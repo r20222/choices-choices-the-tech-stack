@@ -2,7 +2,7 @@
 Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
 De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/choices-choices-the-tech-stack/blob/main/docs/INSTRUCTIONS.md)
 
-# Titel
+# Vue & Cosmic Tech-Stack - Ocean Cleanup Dashboard
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
@@ -14,9 +14,9 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](https://github.com/fdnd-task/ch
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## Beschrijving
+## Beschrijving 📖
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-
+De Ocean Cleanup is organisatie die als doel heeft de oceaan afvalvrij te maken, dit doen ze onder andere door het plaatsen van interceptors in de oceaan en in de riviermondingen. Deze interceptors vangen het afval op. De Ocean Cleanup wil mensen informeren over wat ze aan het doen zijn. Daarom hebben wij voor de Ocean Cleanup een dashboard gemaakt waarin je allerlei informatie kan vinden over de interceptors. Deze opdracht is gemaakt voor de opleiding Frontend Design & Development aan de HVA.
 
 ### Doelstellingen
 
@@ -31,18 +31,42 @@ We werken niet met user-stories maar met doelen. Hieronder zijn de doelen te lez
 ![image](https://github.com/mcphendriks/the-ocean-cleanup/assets/101579892/97f3cd13-fff6-42f2-89fc-c6d8bb57cf76)
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
+https://choices-choices-the-tech-stack-five.vercel.app/
 
-## Kenmerken
+## Kenmerken 🛠️
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie
+Dit project is gemaakt met de volgende technologiën:
 
-* npm install mapbox-gl
-* npm install vue-router
+* HTML
+* CSS
+* JavaScript
+* Vue.js
+* Vite.js
+* Chart.js
+* Mapbox
+* Cosmicjs
 
-## Gebruik
+
+## Installatie 🎛️
+
+1. Clone deze repository naar je code editor.
+2. npm install
+3. npm install chart.js
+4. npm install mapbox
+5. npm install mapbox-gl
+
+## Gebruik 💻
+
+Dit dashboard is bedoeld voor iedereen die interesse heeft in de Ocean Cleanup en kan gebruikt worden om informatie in te zien over de interceptors, zoals bijvoorbeeld hoeveel afval een interceptor uit het water heeft gehaald.
 
 ## Bronnen
+
+* Vue.js
+https://vuejs.org/
+
+* Cosmic.js
+https://www.cosmicjs.com/
 
 ## Licentie
 
