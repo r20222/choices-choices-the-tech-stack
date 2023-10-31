@@ -27,6 +27,8 @@ We werken niet met user-stories maar met doelen. Hieronder zijn de doelen te lez
 * Alle data uit de API wordt gevisualiseerd in het Dashboard (er is meer data in de API dan nu in het Dashboard wordt weergegeven)
 * Bedenk hoe de API nog waardevoller kan worden. Welke data is nog meer relevant? Dit wordt dan toegevoegd aan de API door Martijn.
 * Bonus: Het dashboard voelt "smooth" en "App like"aan
+
+Waar ik aan ga werken komt er als volgt uit te zien:
 <!-- Voeg een mooie poster visual toe 📸 -->
 ![image](https://github.com/mcphendriks/the-ocean-cleanup/assets/101579892/97f3cd13-fff6-42f2-89fc-c6d8bb57cf76)
 
@@ -63,9 +65,11 @@ Dit dashboard is bedoeld voor iedereen die interesse heeft in de Ocean Cleanup e
 ## Bronnen
 
 * Vue.js
+* 
 https://vuejs.org/
 
 * Cosmic.js
+* 
 https://www.cosmicjs.com/
 
 ## Licentie
