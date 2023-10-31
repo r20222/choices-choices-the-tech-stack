@@ -65,11 +65,11 @@ Dit dashboard is bedoeld voor iedereen die interesse heeft in de Ocean Cleanup e
 ## Bronnen
 
 * Vue.js
-* 
+  
 https://vuejs.org/
 
 * Cosmic.js
-* 
+  
 https://www.cosmicjs.com/
 
 ## Licentie
